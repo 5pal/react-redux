@@ -3,10 +3,6 @@ import { connect } from "react-redux";
 import ToDo from "../components/ToDo";
 import { actionCreator } from "../store";
 
-setTimeout(() => {
-    console.log(2);
-}, 1000);
-
 function Home({ toDos, addToDo }) {
     const [text, setText] = useState("");
     const onChange = e => {
